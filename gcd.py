@@ -12,3 +12,4 @@ class EuclideanAlgorithm:
 
 a =  EuclideanAlgorithm()
 print(a.calculate_gcd(10,20))
+
