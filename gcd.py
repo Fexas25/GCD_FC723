@@ -2,11 +2,9 @@
 #gcd(a,b)=gcd(b,a%b) gcd(b, 0) = b
 #repeat this until the remainder =0, then we find the gcd
 def calculate_gcd(a, b):
-    while b != 0:
-        remainder = a % b
-        a = b#a->b
-        b = remainder#b->remainder
-    return a
+    if b == 0:
+        return a
+    return calculate_gcd(b, a%b)#a->b, b->remainder(a%b)
 
 #this is a input function, only avaiable for positive number
 def get_number():
